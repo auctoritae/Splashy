@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SplashyApp: App {
+    @AppStorage(AppStorageKeys.onboardingCompleted) var onboardingCompleted: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
+                .environment(OnboardingStore(
+                    state: OnboardingState(models: [], choosen: []),
+                    reducer: OnboardingReducer())
+                )
         }
     }
 }

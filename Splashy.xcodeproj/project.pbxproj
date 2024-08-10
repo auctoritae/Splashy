@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		A02A06262C63E06C001539D3 /* SplashyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A06252C63E06C001539D3 /* SplashyApp.swift */; };
-		A02A06282C63E06C001539D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A06272C63E06C001539D3 /* ContentView.swift */; };
 		A02A062A2C63E06D001539D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A06292C63E06D001539D3 /* Assets.xcassets */; };
 		A02A062D2C63E06D001539D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */; };
+		A02A064E2C63E854001539D3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A064D2C63E854001539D3 /* APIManager.swift */; };
+		A02A06502C63E860001539D3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A064F2C63E860001539D3 /* DBManager.swift */; };
+		A07005E02C674A5E00813123 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07005DF2C674A5E00813123 /* Constants.swift */; };
+		A07005E22C677E7E00813123 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07005E12C677E7E00813123 /* AppState.swift */; };
+		A0AB7C302C6537750092986E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C2F2C6537750092986E /* OnboardingView.swift */; };
+		A0AB7C322C6537980092986E /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C312C6537980092986E /* OnboardingModel.swift */; };
+		A0AB7C342C6538070092986E /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C332C6538070092986E /* OnboardingState.swift */; };
+		A0AB7C362C65384B0092986E /* OnboardingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C352C65384B0092986E /* OnboardingAction.swift */; };
+		A0AB7C382C6538DE0092986E /* OnboardingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C372C6538DE0092986E /* OnboardingReducer.swift */; };
+		A0AB7C3A2C653A4B0092986E /* OnboardingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C392C653A4B0092986E /* OnboardingStore.swift */; };
+		A0AB7C402C6540E40092986E /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A02A06222C63E06C001539D3 /* Splashy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splashy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02A06252C63E06C001539D3 /* SplashyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashyApp.swift; sourceTree = "<group>"; };
-		A02A06272C63E06C001539D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A02A06292C63E06D001539D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A02A064D2C63E854001539D3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A02A064F2C63E860001539D3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		A07005DF2C674A5E00813123 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A07005E12C677E7E00813123 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A0AB7C2F2C6537750092986E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A0AB7C312C6537980092986E /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		A0AB7C332C6538070092986E /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		A0AB7C352C65384B0092986E /* OnboardingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAction.swift; sourceTree = "<group>"; };
+		A0AB7C372C6538DE0092986E /* OnboardingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReducer.swift; sourceTree = "<group>"; };
+		A0AB7C392C653A4B0092986E /* OnboardingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStore.swift; sourceTree = "<group>"; };
+		A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +71,14 @@
 		A02A06242C63E06C001539D3 /* Splashy */ = {
 			isa = PBXGroup;
 			children = (
+				A07005E12C677E7E00813123 /* AppState.swift */,
 				A02A06252C63E06C001539D3 /* SplashyApp.swift */,
-				A02A06272C63E06C001539D3 /* ContentView.swift */,
 				A02A06292C63E06D001539D3 /* Assets.xcassets */,
+				A07005DE2C674A4700813123 /* Constants */,
+				A02A06492C63E3F1001539D3 /* UI */,
+				A02A06482C63E3E7001539D3 /* API */,
+				A02A06472C63E3D8001539D3 /* DB */,
+				A02A064A2C63E40D001539D3 /* Scenes */,
 				A02A062B2C63E06D001539D3 /* Preview Content */,
 			);
 			path = Splashy;
@@ -65,6 +90,59 @@
 				A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A02A06472C63E3D8001539D3 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A02A064F2C63E860001539D3 /* DBManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A02A06482C63E3E7001539D3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A02A064D2C63E854001539D3 /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A02A06492C63E3F1001539D3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A02A064A2C63E40D001539D3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A0AB7C2E2C6537330092986E /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A07005DE2C674A4700813123 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A07005DF2C674A5E00813123 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A0AB7C2E2C6537330092986E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A0AB7C312C6537980092986E /* OnboardingModel.swift */,
+				A0AB7C332C6538070092986E /* OnboardingState.swift */,
+				A0AB7C352C65384B0092986E /* OnboardingAction.swift */,
+				A0AB7C372C6538DE0092986E /* OnboardingReducer.swift */,
+				A0AB7C392C653A4B0092986E /* OnboardingStore.swift */,
+				A0AB7C2F2C6537750092986E /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02A06282C63E06C001539D3 /* ContentView.swift in Sources */,
+				A0AB7C342C6538070092986E /* OnboardingState.swift in Sources */,
+				A02A064E2C63E854001539D3 /* APIManager.swift in Sources */,
+				A0AB7C362C65384B0092986E /* OnboardingAction.swift in Sources */,
+				A07005E22C677E7E00813123 /* AppState.swift in Sources */,
+				A0AB7C322C6537980092986E /* OnboardingModel.swift in Sources */,
+				A0AB7C302C6537750092986E /* OnboardingView.swift in Sources */,
 				A02A06262C63E06C001539D3 /* SplashyApp.swift in Sources */,
+				A0AB7C402C6540E40092986E /* OnboardingPageView.swift in Sources */,
+				A02A06502C63E860001539D3 /* DBManager.swift in Sources */,
+				A0AB7C382C6538DE0092986E /* OnboardingReducer.swift in Sources */,
+				A0AB7C3A2C653A4B0092986E /* OnboardingStore.swift in Sources */,
+				A07005E02C674A5E00813123 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +360,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Splashy/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SY2WQX9CL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Splashy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +379,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.axlobanoff.Splashy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,13 +397,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Splashy/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SY2WQX9CL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Splashy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +416,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.axlobanoff.Splashy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
