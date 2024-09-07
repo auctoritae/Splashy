@@ -7,12 +7,45 @@
 
 import SwiftUI
 
+protocol OnboardingPageProtocol {
+    func chooseItem(_ model: ChoosenItem)
+}
+
 struct OnboardingPageView: View {
+    private enum Appearance {
+        static let fontSize: CGFloat = 80
+        static let padding: CGFloat = 16
+    }
+    
+    var model: OnboardingItem
+    var delegate: OnboardingPageProtocol?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LazyVStack(alignment: .center) {
+            Text(model.title.uppercased())
+                .font(.system(.largeTitle))
+                .fontWeight(.heavy)
+                .padding(Appearance.padding)
+            
+            ForEach(model.options, id: \.self) { item in
+                Text(item)
+                    .font(.system(size: Appearance.fontSize))
+                    .padding(Appearance.padding)
+                    .onTapGesture {
+                        delegate?.chooseItem(
+                            ChoosenItem(key: model.key, value: item)
+                        )
+                    }
+            }
+        }
+        .padding(.all, Appearance.padding)
     }
 }
 
 #Preview {
-    OnboardingPageView()
+    OnboardingPageView(model: OnboardingItem(
+        key: .weather, 
+        title: "Choose your fav weather",
+        options: ["☀️", "⛈️", "❄️"])
+    )
 }

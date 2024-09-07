@@ -10,8 +10,6 @@
 		A02A06262C63E06C001539D3 /* SplashyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A06252C63E06C001539D3 /* SplashyApp.swift */; };
 		A02A062A2C63E06D001539D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A06292C63E06D001539D3 /* Assets.xcassets */; };
 		A02A062D2C63E06D001539D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */; };
-		A02A064E2C63E854001539D3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A064D2C63E854001539D3 /* APIManager.swift */; };
-		A02A06502C63E860001539D3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A064F2C63E860001539D3 /* DBManager.swift */; };
 		A07005E02C674A5E00813123 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07005DF2C674A5E00813123 /* Constants.swift */; };
 		A07005E22C677E7E00813123 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07005E12C677E7E00813123 /* AppState.swift */; };
 		A0AB7C302C6537750092986E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C2F2C6537750092986E /* OnboardingView.swift */; };
@@ -28,8 +26,6 @@
 		A02A06252C63E06C001539D3 /* SplashyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashyApp.swift; sourceTree = "<group>"; };
 		A02A06292C63E06D001539D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A02A064D2C63E854001539D3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		A02A064F2C63E860001539D3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A07005DF2C674A5E00813123 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A07005E12C677E7E00813123 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A0AB7C2F2C6537750092986E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -76,8 +72,6 @@
 				A02A06292C63E06D001539D3 /* Assets.xcassets */,
 				A07005DE2C674A4700813123 /* Constants */,
 				A02A06492C63E3F1001539D3 /* UI */,
-				A02A06482C63E3E7001539D3 /* API */,
-				A02A06472C63E3D8001539D3 /* DB */,
 				A02A064A2C63E40D001539D3 /* Scenes */,
 				A02A062B2C63E06D001539D3 /* Preview Content */,
 			);
@@ -90,22 +84,6 @@
 				A02A062C2C63E06D001539D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A02A06472C63E3D8001539D3 /* DB */ = {
-			isa = PBXGroup;
-			children = (
-				A02A064F2C63E860001539D3 /* DBManager.swift */,
-			);
-			path = DB;
-			sourceTree = "<group>";
-		};
-		A02A06482C63E3E7001539D3 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				A02A064D2C63E854001539D3 /* APIManager.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		A02A06492C63E3F1001539D3 /* UI */ = {
@@ -216,14 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AB7C342C6538070092986E /* OnboardingState.swift in Sources */,
-				A02A064E2C63E854001539D3 /* APIManager.swift in Sources */,
 				A0AB7C362C65384B0092986E /* OnboardingAction.swift in Sources */,
 				A07005E22C677E7E00813123 /* AppState.swift in Sources */,
 				A0AB7C322C6537980092986E /* OnboardingModel.swift in Sources */,
 				A0AB7C302C6537750092986E /* OnboardingView.swift in Sources */,
 				A02A06262C63E06C001539D3 /* SplashyApp.swift in Sources */,
 				A0AB7C402C6540E40092986E /* OnboardingPageView.swift in Sources */,
-				A02A06502C63E860001539D3 /* DBManager.swift in Sources */,
 				A0AB7C382C6538DE0092986E /* OnboardingReducer.swift in Sources */,
 				A0AB7C3A2C653A4B0092986E /* OnboardingStore.swift in Sources */,
 				A07005E02C674A5E00813123 /* Constants.swift in Sources */,
@@ -355,7 +331,6 @@
 		A02A06312C63E06D001539D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -392,7 +367,6 @@
 		A02A06322C63E06D001539D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

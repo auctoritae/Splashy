@@ -7,20 +7,20 @@
 
 import Foundation
 
+enum ItemType: String {
+    case background
+    case weather
+}
+
 struct ChoosenItem: Identifiable {
-    let id: String
-    let key: String
+    let id = UUID()
+    let key: ItemType
     let value: String
 }
 
-struct OnboardingItem: Identifiable {
+struct OnboardingItem: Hashable {
     let id = UUID()
     let key: ItemType
     let title: String
     let options: [String]
-    
-    enum ItemType: String {
-        case background
-        case weather
-    }
 }

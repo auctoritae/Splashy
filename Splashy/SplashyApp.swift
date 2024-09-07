@@ -15,7 +15,7 @@ struct SplashyApp: App {
         WindowGroup {
             OnboardingView()
                 .environment(OnboardingStore(
-                    state: OnboardingState(models: [], choosen: []),
+                    state: OnboardingState(models: [], choosen: [], pageIndex: 0, showButton: false),
                     reducer: OnboardingReducer())
                 )
         }

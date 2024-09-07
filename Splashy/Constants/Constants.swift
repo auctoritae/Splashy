@@ -10,3 +10,7 @@ import Foundation
 enum AppStorageKeys {
     static let onboardingCompleted = "onboardingCompleted"
 }
+
+enum StaticTexts {
+    static let completed = "done"
+}

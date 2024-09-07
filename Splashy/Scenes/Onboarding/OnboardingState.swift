@@ -10,4 +10,6 @@ import Foundation
 struct OnboardingState {
     var models: [OnboardingItem]
     var choosen: [ChoosenItem]
+    var pageIndex: Int
+    var showButton: Bool
 }
