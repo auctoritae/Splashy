@@ -69,7 +69,7 @@ struct OnboardingView: View, OnboardingPageProtocol {
         }
     }
     
-    func chooseItem(_ model: ChoosenItem) {
+    func chooseItem(_ model: OptionItem) {
         store.send(action: .select(model))
     }
 }

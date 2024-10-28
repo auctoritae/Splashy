@@ -9,6 +9,6 @@ import Foundation
 
 enum OnboardingAction {
     case start
-    case select(ChoosenItem)
+    case select(OptionItem)
     case complete
 }

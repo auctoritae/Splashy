@@ -8,7 +8,7 @@
 import SwiftUI
 
 protocol OnboardingPageProtocol {
-    func chooseItem(_ model: ChoosenItem)
+    func chooseItem(_ model: OptionItem)
 }
 
 struct OnboardingPageView: View {
@@ -17,7 +17,7 @@ struct OnboardingPageView: View {
         static let padding: CGFloat = 16
     }
     
-    var model: OnboardingItem
+    let model: OnboardingItem
     var delegate: OnboardingPageProtocol?
     
     var body: some View {
@@ -28,13 +28,11 @@ struct OnboardingPageView: View {
                 .padding(Appearance.padding)
             
             ForEach(model.options, id: \.self) { item in
-                Text(item)
+                Text(item.value)
                     .font(.system(size: Appearance.fontSize))
                     .padding(Appearance.padding)
                     .onTapGesture {
-                        delegate?.chooseItem(
-                            ChoosenItem(key: model.key, value: item)
-                        )
+                        delegate?.chooseItem(item)
                     }
             }
         }
@@ -44,8 +42,11 @@ struct OnboardingPageView: View {
 
 #Preview {
     OnboardingPageView(model: OnboardingItem(
-        key: .weather, 
         title: "Choose your fav weather",
-        options: ["☀️", "⛈️", "❄️"])
+        options: [
+            OptionItem(key: .weather, value: "☀️"),
+            OptionItem(key: .weather, value: "⛈️"),
+            OptionItem(key: .weather, value: "❄️")
+        ])
     )
 }

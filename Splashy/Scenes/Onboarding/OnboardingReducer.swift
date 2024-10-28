@@ -17,8 +17,20 @@ final class OnboardingReducer {
         case .start:
             state.choosen = []
             state.models = [
-                OnboardingItem(key: .background, title: "Choose background color", options: ["🖤", "🩶", "🤍"]),
-                OnboardingItem(key: .weather, title: "Choose your fav weather", options: ["☀️", "⛈️", "❄️"])
+                OnboardingItem(
+                    title: "Choose background color", options: [
+                        OptionItem(key: .background, value: "🖤"),
+                        OptionItem(key: .background, value: "🩶"),
+                        OptionItem(key: .background, value: "🤍")
+                    ]
+                ),
+                OnboardingItem(
+                    title: "Choose your fav weather", options: [
+                        OptionItem(key: .weather, value: "☀️"),
+                        OptionItem(key: .weather, value: "⛈️"),
+                        OptionItem(key: .weather, value: "❄️")
+                    ]
+                )
             ]
             
         case let .select(item):
