@@ -12,13 +12,13 @@ enum OptionItemType {
     case weather
 }
 
-struct OptionItem: Identifiable, Hashable {
+struct OptionItem: Hashable {
     let id = UUID()
     let key: OptionItemType
     let value: String
 }
 
-struct OnboardingItem: Identifiable, Hashable {
+struct OnboardingItem: Hashable {
     let id = UUID()
     let title: String
     let options: [OptionItem]

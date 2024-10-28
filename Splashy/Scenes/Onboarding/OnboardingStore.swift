@@ -10,7 +10,7 @@ import Observation
 
 @Observable
 final class OnboardingStore {
-    var state: OnboardingState
+    private(set) var state: OnboardingState
     private let reducer: OnboardingReducer
     
     init(
