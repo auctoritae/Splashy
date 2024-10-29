@@ -13,18 +13,18 @@ struct FeedView: View {
         static let elementPadding: CGFloat = 16
     }
     
+    @Namespace var namespace
     var store: FeedStore
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVStack {
-                    ForEach(store.state.models, id: \.id) { model in
-                        NavigationLink(value: model) {
-                            FeedItemElement(model: model)
-                                .frame(height: Appearance.elementHeight)
-                                .padding(Appearance.elementPadding)
-                        }
+                ForEach(store.state.models, id: \.id) { model in
+                    NavigationLink(value: model) {
+                        FeedItemElement(model: model)
+                            .matchedTransitionSource(id: model.id, in: namespace)
+                            .frame(height: Appearance.elementHeight)
+                            .padding(Appearance.elementPadding)
                     }
                 }
                 .onAppear {
@@ -33,6 +33,7 @@ struct FeedView: View {
             }
             .navigationDestination(for: FeedModel.self) { model in
                 FeedItemView(model: model)
+                    .navigationTransition(.zoom(sourceID: model.id, in: namespace))
             }
             .scrollIndicators(.hidden)
         }

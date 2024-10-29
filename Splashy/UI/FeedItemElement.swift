@@ -9,13 +9,13 @@ import SwiftUI
 
 struct FeedItemElement: View {
     private enum Appearance {
-        static let cornerRadius: CGFloat = 20
+        static let corners: CGFloat = 20
     }
     
     let model: FeedModel
     
     var body: some View {
-        RoundedRectangle(cornerRadius: Appearance.cornerRadius)
+        RoundedRectangle(cornerRadius: Appearance.corners)
             .foregroundStyle(model.color)
     }
 }

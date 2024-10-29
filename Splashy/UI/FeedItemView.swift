@@ -15,6 +15,7 @@ struct FeedItemView: View {
         Rectangle()
             .edgesIgnoringSafeArea(.all)
             .foregroundStyle(model.color)
+            .navigationBarBackButtonHidden()
     }
 }
 
