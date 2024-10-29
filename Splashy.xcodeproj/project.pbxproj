@@ -16,7 +16,6 @@
 		A05BF62D2CCFFEA60028A1C1 /* FeedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05BF62C2CCFFEA60028A1C1 /* FeedReducer.swift */; };
 		A05BF62F2CCFFEB30028A1C1 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05BF62E2CCFFEB30028A1C1 /* FeedStore.swift */; };
 		A05BF6312CCFFEBE0028A1C1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05BF6302CCFFEBE0028A1C1 /* FeedView.swift */; };
-		A05BF6332CCFFECC0028A1C1 /* FeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05BF6322CCFFECC0028A1C1 /* FeedCellView.swift */; };
 		A07005E02C674A5E00813123 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07005DF2C674A5E00813123 /* Constants.swift */; };
 		A0AB7C302C6537750092986E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C2F2C6537750092986E /* OnboardingView.swift */; };
 		A0AB7C322C6537980092986E /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C312C6537980092986E /* OnboardingModel.swift */; };
@@ -25,6 +24,8 @@
 		A0AB7C382C6538DE0092986E /* OnboardingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C372C6538DE0092986E /* OnboardingReducer.swift */; };
 		A0AB7C3A2C653A4B0092986E /* OnboardingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C392C653A4B0092986E /* OnboardingStore.swift */; };
 		A0AB7C402C6540E40092986E /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */; };
+		A0C7C9CC2CD147F700211167 /* FeedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7C9CB2CD147F700211167 /* FeedItemView.swift */; };
+		A0C7C9CE2CD151B800211167 /* FeedItemElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7C9CD2CD151B800211167 /* FeedItemElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,6 @@
 		A05BF62C2CCFFEA60028A1C1 /* FeedReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReducer.swift; sourceTree = "<group>"; };
 		A05BF62E2CCFFEB30028A1C1 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		A05BF6302CCFFEBE0028A1C1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		A05BF6322CCFFECC0028A1C1 /* FeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellView.swift; sourceTree = "<group>"; };
 		A07005DF2C674A5E00813123 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0AB7C2F2C6537750092986E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A0AB7C312C6537980092986E /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		A0AB7C372C6538DE0092986E /* OnboardingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReducer.swift; sourceTree = "<group>"; };
 		A0AB7C392C653A4B0092986E /* OnboardingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStore.swift; sourceTree = "<group>"; };
 		A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		A0C7C9CB2CD147F700211167 /* FeedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemView.swift; sourceTree = "<group>"; };
+		A0C7C9CD2CD151B800211167 /* FeedItemElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A0AB7C3F2C6540E40092986E /* OnboardingPageView.swift */,
-				A05BF6322CCFFECC0028A1C1 /* FeedCellView.swift */,
+				A0C7C9CD2CD151B800211167 /* FeedItemElement.swift */,
+				A0C7C9CB2CD147F700211167 /* FeedItemView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05BF62F2CCFFEB30028A1C1 /* FeedStore.swift in Sources */,
+				A0C7C9CE2CD151B800211167 /* FeedItemElement.swift in Sources */,
 				A0AB7C342C6538070092986E /* OnboardingState.swift in Sources */,
 				A0AB7C362C65384B0092986E /* OnboardingAction.swift in Sources */,
 				A05BF6292CCFFE8E0028A1C1 /* FeedState.swift in Sources */,
@@ -230,10 +234,10 @@
 				A0AB7C402C6540E40092986E /* OnboardingPageView.swift in Sources */,
 				A0AB7C382C6538DE0092986E /* OnboardingReducer.swift in Sources */,
 				A05BF62B2CCFFE990028A1C1 /* FeedAction.swift in Sources */,
+				A0C7C9CC2CD147F700211167 /* FeedItemView.swift in Sources */,
 				A05BF62D2CCFFEA60028A1C1 /* FeedReducer.swift in Sources */,
 				A0AB7C3A2C653A4B0092986E /* OnboardingStore.swift in Sources */,
 				A07005E02C674A5E00813123 /* Constants.swift in Sources */,
-				A05BF6332CCFFECC0028A1C1 /* FeedCellView.swift in Sources */,
 				A05BF6272CCFFE830028A1C1 /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -350,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -379,6 +383,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +420,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -14,7 +14,13 @@ final class FeedReducer {
         
         switch action {
             case .start:
-            break
+            state.models = [
+                FeedModel(color: .indigo),
+                FeedModel(color: .pink),
+                FeedModel(color: .cyan),
+                FeedModel(color: .orange),
+                FeedModel(color: .mint)
+            ]
         }
         
         return state

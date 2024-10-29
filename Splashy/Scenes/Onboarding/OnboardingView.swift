@@ -50,7 +50,7 @@ struct OnboardingView: View, OnboardingPageProtocol {
             
             Button(action: {
                 store.send(action: .complete)
-                /// add navigation here
+                
             }, label: {
                 Text(StaticTexts.completed.uppercased())
                     .frame(minWidth: Appearance.Button.width, alignment: .center)

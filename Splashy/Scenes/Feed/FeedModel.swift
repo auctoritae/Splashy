@@ -5,8 +5,9 @@
 //  Created by Alexander Lobanoff on 10/28/24.
 //
 
-import Foundation
+import SwiftUI
 
-struct FeedModel: Hashable {
+struct FeedModel: Hashable, Identifiable {
     let id = UUID()
+    let color: Color
 }
